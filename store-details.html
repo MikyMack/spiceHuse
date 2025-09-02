@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Jijo">
+	<!-- Page Title -->
+    <title>SpiceHuse | Store Details</title>
+	<!-- Favicon Icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	<!-- Google Fonts Css-->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+	<!-- Bootstrap Css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- SlickNav Css -->
+	<link href="css/slicknav.min.css" rel="stylesheet">
+	<!-- Swiper Css -->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<!-- Font Awesome Icon Css-->
+	<link href="css/all.min.css" rel="stylesheet" media="screen">
+	<!-- Animated Css -->
+	<link href="css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Mouse Cursor Css File -->
+	<link rel="stylesheet" href="css/mousecursor.css">
+	<!-- Main Custom Css -->
+	<link href="css/custom.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Header Start -->
+  <header class="main-header">
+    <div class="header-sticky">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo Start -->
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo_image" src="images/logo.png" alt="Logo"> 
+                </a>
+                <!-- Logo End -->
+
+                <!-- Main Menu Start -->
+                <div class="collapse navbar-collapse main-menu">
+                    <div class="nav-menu-wrapper">
+                        <ul class="navbar-nav mr-auto" id="menu">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>                                
+                            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
+                            <li class="nav-item"><a class="nav-link" href="store.html">Shop</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>                       
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                            <li class="nav-item highlighted-menu"><a class="nav-link" href="reserve-table.html">Buy Now</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Header Btn Start -->
+                    <div class="header-btn">
+                        <a href="contact.html" class="btn-default btn-highlighted">Buy Now</a>
+                    </div>
+                    <!-- Header Btn End -->                      
+                </div>
+                <!-- Main Menu End -->
+                <div class="navbar-toggle"></div>
+            </div>
+        </nav>
+        <div class="responsive-menu"></div>
+    </div>
+</header>
+<!-- Header End -->
+
+   <!-- Page Header Start -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1 class="text-anime-style-3" data-cursor="-opaque">Product Details</h1>
+                        <nav class="wow fadeInUp">
+                       
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+
+    <!-- Product Details Section Start -->
+    <section class="product-details-section py-5">
+        <div class="container">
+            <div class="row align-items-start">
+                <!-- Product Thumbnails -->
+                <div class="col-lg-1 d-none d-lg-block">
+                    <div class="product-thumbnails d-flex flex-column gap-3">
+                        <img src="images/spicehuse/cardomon1.jpg" alt="Whole Black Pepper" class="img-thumbnail border-primary active" style="cursor:pointer; width:60px;" onclick="updateMainImage('images/products/black-pepper.jpg')">
+                        <img src="images/spicehuse/cardomon1.jpg" alt="Black Pepper Closeup" class="img-thumbnail" style="cursor:pointer; width:60px;" onclick="updateMainImage('images/products/black-pepper-closeup.jpg')">
+                        <img src="images/spicehuse/cardomon1.jpg" alt="Black Pepper Pack" class="img-thumbnail" style="cursor:pointer; width:60px;" onclick="updateMainImage('images/products/black-pepper-pack.jpg')">
+                    </div>
+                </div>
+                <!-- Product Image -->
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="product-image-box position-relative">
+                        <figure class="image-anime reveal mb-0">
+                            <img id="mainProductImage" src="images/spicehuse/cardomon1.jpg" alt="Whole Black Pepper" class="img-fluid rounded shadow border border-3 border-primary" style="max-height:420px;object-fit:cover;">
+                        </figure>                  
+                    </div>
+                </div>
+                <!-- Product Info -->
+                <div class="col-lg-6">
+                    <div class="product-info-box p-4 rounded shadow bg-white">
+                        <h1 class="product-title mb-2 text-anime-style-3 fw-bold" data-cursor="-opaque" style="color:#1a3c16;">Whole Black Pepper</h1>
+                        <div class="product-pricing mb-3">
+                            <span class="product-offer-price h2 fw-bold text-danger me-2" id="offerPrice">₹3,200</span>
+                            <span class="product-base-price text-muted text-decoration-line-through fs-5" id="basePrice">₹3,800</span>
+                            <span class="badge bg-warning text-dark ms-2">Save 16%</span>
+                        </div>
+                        <div class="product-variants mb-4">
+                            <label for="variantSelect" class="form-label fw-bold me-2">Select Variant:</label>
+                            <select id="variantSelect" class="form-select d-inline-block w-auto" style="min-width:120px;">
+                                <option value="40" data-offer="3200" data-base="3800">40kg</option>
+                                <option value="20" data-offer="1700" data-base="2000">20kg</option>
+                                <option value="5" data-offer="450" data-base="600">5kg</option>
+                                <option value="1" data-offer="110" data-base="150">1kg</option>
+                            </select>
+                        </div>
+                        <div class="product-description mb-4">
+                            <p class="fs-5 text-secondary">
+                                Sourced from the lush plantations of Kerala, our Whole Black Pepper delivers bold, aromatic flavor and a signature heat to your dishes. Perfect for grinding fresh or using whole in recipes, this spice is a must-have for every kitchen.
+                            </p>
+                        </div>
+                        <div class="product-highlights mb-4">
+                            <h5 class="mb-2 fw-bold" style="color:#1a3c16;">Why You'll Love It:</h5>
+                            <ul class="list-unstyled ps-2">
+                                <li class="mb-1"><i class="fa fa-check-circle text-success me-2"></i>100% Natural & Sun-dried</li>
+                                <li class="mb-1"><i class="fa fa-check-circle text-success me-2"></i>Rich in Piperine for Maximum Flavor</li>
+                                <li class="mb-1"><i class="fa fa-check-circle text-success me-2"></i>Direct from Kerala Farms</li>
+                                <li class="mb-1"><i class="fa fa-check-circle text-success me-2"></i>Perfect for All Cuisines</li>
+                            </ul>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 mb-4 flex-wrap">
+                            <a href="/contact.html" class="btn btn-lg btn-highlighted px-4 py-2 fw-bold shadow" style="background: linear-gradient(90deg,#1a3c16 60%,#f7b32b 100%); color:#fff; border:none;">Buy Now</a>
+                        </div>
+                        <div class="product-share d-flex align-items-center">
+                            <span class="me-2 fw-bold text-secondary">Share:</span>
+                            <a href="https://www.instagram.com/share?url=https://spicehuse.com/store-details.html" target="_blank" class="me-2" title="Share on Instagram">
+                                <img src="images/spicehuse/social.png" alt="Instagram" style="width:32px;height:32px;object-fit:contain;">
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://spicehuse.com/store-details.html" target="_blank" class="me-2" title="Share on Facebook">
+                                <img src="images/spicehuse/facebook.png" alt="Facebook" style="width:32px;height:32px;object-fit:contain;">
+                            </a>
+                            <a href="https://wa.me/?text=https://spicehuse.com/store-details.html" target="_blank" title="Share on WhatsApp">
+                                <img src="images/spicehuse/whatsapp.png" alt="WhatsApp" style="width:32px;height:32px;object-fit:contain;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Reviews & Add Review Section -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="reviews-section p-4 rounded shadow bg-white">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa fa-star text-warning fs-3 me-2"></i>
+                            <h3 class="fw-bold mb-0" style="color:#1a3c16;">Customer Buzz <span class="fs-5 text-muted">(Reviews)</span></h3>
+                        </div>
+                        <!-- Add Review Form -->
+                        <div class="add-review-box mb-4">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="fw-bold mb-3" style="color:#f7b32b;"><i class="fa fa-pen me-2"></i>Share Your SpiceHuse Experience!</h5>
+                                    <form id="reviewForm" autocomplete="off">
+                                        <div class="mb-3">
+                                            <label for="reviewerName" class="form-label">Your Name</label>
+                                            <input type="text" class="form-control" id="reviewerName" required maxlength="32" placeholder="e.g. Priya S.">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="reviewRating" class="form-label">Rating</label>
+                                            <select class="form-select w-auto d-inline-block" id="reviewRating" required>
+                                                <option value="">Choose...</option>
+                                                <option value="5">⭐⭐⭐⭐⭐ (Excellent!)</option>
+                                                <option value="4">⭐⭐⭐⭐ (Great)</option>
+                                                <option value="3">⭐⭐⭐ (Good)</option>
+                                                <option value="2">⭐⭐ (Okay)</option>
+                                                <option value="1">⭐ (Needs Improvement)</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="reviewText" class="form-label">Your Review</label>
+                                            <textarea class="form-control" id="reviewText" rows="3" required maxlength="300" placeholder="What did you love? Any tips for other spice lovers?"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-highlighted fw-bold px-4 py-2" style="background: linear-gradient(90deg,#f7b32b 60%,#1a3c16 100%); color:#fff;">
+                                            <i class="fa fa-paper-plane me-1"></i>Post Review
+                                        </button>
+                                        <span id="reviewSuccessMsg" class="text-success ms-3" style="display:none;">Thank you for your review!</span>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Reviews List -->
+                        <div id="reviewsList">
+                            <!-- Reviews will be loaded here -->
+                        </div>
+                        <div class="text-center mt-3">
+                            <button id="loadMoreReviews" class="btn btn-outline-primary px-4 py-2" style="display:none;">
+                                <i class="fa fa-arrow-down me-1"></i>Load More Reviews
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Reviews & Add Review Section -->
+        </div>
+    </section>
+    <!-- Product Details Section End -->
+
+    <script>
+    // --- Demo Review Data ---
+    const demoReviews = [
+        {
+            name: "Amit K.",
+            rating: 5,
+            text: "Absolutely loved the bold flavor! The aroma is so fresh, you can tell it's straight from Kerala. Will buy again.",
+            date: "2024-06-01"
+        },
+        {
+            name: "Sonia R.",
+            rating: 4,
+            text: "Great quality black pepper. The packaging was neat and delivery was quick. Highly recommend!",
+            date: "2024-05-28"
+        },
+        {
+            name: "Chef Manoj",
+            rating: 5,
+            text: "As a chef, I’m picky about spices. This pepper is top-notch and elevates every dish. Five stars!",
+            date: "2024-05-20"
+        },
+        {
+            name: "Ravi S.",
+            rating: 3,
+            text: "Good product, but I wish there were smaller pack sizes. Otherwise, very satisfied.",
+            date: "2024-05-15"
+        },
+        {
+            name: "Priya S.",
+            rating: 5,
+            text: "The best black pepper I’ve ever used! Adds a real punch to my curries.",
+            date: "2024-05-10"
+        },
+        {
+            name: "Anjali T.",
+            rating: 4,
+            text: "Fresh and aromatic. My family loves it. Will try other spices too!",
+            date: "2024-05-05"
+        }
+    ];
+
+    // --- Review Pagination ---
+    let reviews = [...demoReviews];
+    let reviewsPerPage = 3;
+    let currentPage = 1;
+
+    function renderStars(rating) {
+        let stars = '';
+        for (let i = 1; i <= 5; i++) {
+            stars += `<i class="fa${i <= rating ? 's' : 'r'} fa-star text-warning"></i>`;
+        }
+        return stars;
+    }
+
+    function renderReviews(page = 1) {
+        const start = 0;
+        const end = page * reviewsPerPage;
+        const reviewsToShow = reviews.slice(0, end);
+        let html = '';
+        if (reviewsToShow.length === 0) {
+            html = `<div class="alert alert-info text-center">No reviews yet. Be the first to share your experience!</div>`;
+        } else {
+            reviewsToShow.forEach(r => {
+                html += `
+                <div class="review-box border-bottom pb-3 mb-3">
+                    <div class="d-flex align-items-center mb-1">
+                        <span class="fw-bold me-2" style="color:#1a3c16;">${r.name}</span>
+                        <span class="me-2">${renderStars(r.rating)}</span>
+                        <span class="text-muted small">${new Date(r.date).toLocaleDateString()}</span>
+                    </div>
+                    <div class="review-text fs-6 text-secondary">${r.text}</div>
+                </div>
+                `;
+            });
+        }
+        document.getElementById('reviewsList').innerHTML = html;
+        // Show/hide Load More button
+        const loadMoreBtn = document.getElementById('loadMoreReviews');
+        if (reviews.length > end) {
+            loadMoreBtn.style.display = '';
+        } else {
+            loadMoreBtn.style.display = 'none';
+        }
+    }
+
+    // --- Add Review Handler ---
+    document.addEventListener('DOMContentLoaded', function() {
+        renderReviews(currentPage);
+
+        document.getElementById('loadMoreReviews').addEventListener('click', function() {
+            currentPage++;
+            renderReviews(currentPage);
+        });
+
+        document.getElementById('reviewForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('reviewerName').value.trim() || "Anonymous";
+            const rating = parseInt(document.getElementById('reviewRating').value);
+            const text = document.getElementById('reviewText').value.trim();
+            if (!rating || !text) return;
+            const newReview = {
+                name,
+                rating,
+                text,
+                date: new Date().toISOString().split('T')[0]
+            };
+            reviews.unshift(newReview);
+            currentPage = 1;
+            renderReviews(currentPage);
+            document.getElementById('reviewForm').reset();
+            const msg = document.getElementById('reviewSuccessMsg');
+            msg.style.display = 'inline';
+            setTimeout(() => { msg.style.display = 'none'; }, 2500);
+        });
+    });
+    </script>
+
+    <!-- Related Products Section Start -->
+    <section class="related-products-section py-5" style="background: linear-gradient(90deg,#f7f7f7 60%,#fffbe6 100%);">
+        <div class="container">
+            <div class="section-title mb-4 text-center">
+                <h2 class="text-anime-style-3 fw-bold" data-cursor="-opaque" style="color:#1a3c16;">Related Products</h2>
+            </div>
+            <div class="row g-4">
+                <!-- Related Product 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm position-relative product-card-hover">
+                        <div class="position-relative">
+                            <a href="product-details.html?product=cardamom">
+                                <img src="images/spicehuse/cardomon1.jpg" class="card-img-top rounded-top" alt="Cardamom" style="height:220px;object-fit:cover;">
+                            </a>
+                      
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2 fw-bold" style="color:#1a3c16;">Green Cardamom</h5>
+                            <div class="mb-2">
+                                <span class="text-highlighted fw-bold fs-5" style="color:#e67e22;">₹2,800</span>
+                                <span class="text-muted text-decoration-line-through ms-2">₹3,200</span>
+                            </div>
+                            <div class="d-flex justify-content-center gap-2 mb-2">
+                                <img src="images/spicehuse/cardomon1.jpg" alt="Cardamom Thumb 1" class="img-thumbnail" style="width:40px;height:40px;object-fit:cover;">
+                                <img src="images/spicehuse/cardomon1.jpg" alt="Cardamom Thumb 2" class="img-thumbnail" style="width:40px;height:40px;object-fit:cover;">
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+                <!-- Related Product 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm position-relative product-card-hover">
+                        <div class="position-relative">
+                            <a href="product-details.html?product=cloves">
+                                <img src="images/spicehuse/cardomon1.jpg" class="card-img-top rounded-top" alt="Cloves" style="height:220px;object-fit:cover;">
+                            </a>
+                       
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2 fw-bold" style="color:#1a3c16;">Premium Cloves</h5>
+                            <div class="mb-2">
+                                <span class="text-highlighted fw-bold fs-5" style="color:#e67e22;">₹1,900</span>
+                                <span class="text-muted text-decoration-line-through ms-2">₹2,200</span>
+                            </div>
+                            <div class="d-flex justify-content-center gap-2 mb-2">
+                                <img src="images/spicehuse/cardomon1.jpg" alt="Cloves Thumb 1" class="img-thumbnail" style="width:40px;height:40px;object-fit:cover;">
+                                <img src="images/spicehuse/cardomon1.jpg" alt="Cloves Thumb 2" class="img-thumbnail" style="width:40px;height:40px;object-fit:cover;">
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+                <!-- Related Product 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm position-relative product-card-hover">
+                        <div class="position-relative">
+                            <a href="product-details.html?product=cinnamon">
+                                <img src="images/spicehuse/cardomon1.jpg" class="card-img-top rounded-top" alt="Cinnamon" style="height:220px;object-fit:cover;">
+                            </a>
+                  
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-2 fw-bold" style="color:#1a3c16;">Ceylon Cinnamon</h5>
+                            <div class="mb-2">
+                                <span class="text-highlighted fw-bold fs-5" style="color:#e67e22;">₹1,200</span>
+                                <span class="text-muted text-decoration-line-through ms-2">₹1,500</span>
+                            </div>
+                            <div class="d-flex justify-content-center gap-2 mb-2">
+                                <img src="images/spicehuse/cardomon1.jpg" alt="Cinnamon Thumb 1" class="img-thumbnail" style="width:40px;height:40px;object-fit:cover;">
+                                <img src="images/spicehuse/cardomon1.jpg" alt="Cinnamon Thumb 2" class="img-thumbnail" style="width:40px;height:40px;object-fit:cover;">
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Related Products Section End -->
+
+    <script>
+        // Variant price update logic
+        document.addEventListener('DOMContentLoaded', function() {
+            var variantSelect = document.getElementById('variantSelect');
+            var offerPrice = document.getElementById('offerPrice');
+            var basePrice = document.getElementById('basePrice');
+            variantSelect.addEventListener('change', function() {
+                var selected = variantSelect.options[variantSelect.selectedIndex];
+                offerPrice.textContent = '₹' + selected.getAttribute('data-offer');
+                basePrice.textContent = '₹' + selected.getAttribute('data-base');
+            });
+        });
+
+        // Product thumbnail image switcher
+        function updateMainImage(src) {
+            var mainImg = document.getElementById('mainProductImage');
+            mainImg.src = src;
+            // Highlight active thumbnail
+            var thumbs = document.querySelectorAll('.product-thumbnails img');
+            thumbs.forEach(function(img) {
+                img.classList.remove('border-primary', 'active');
+            });
+            var activeThumb = Array.from(thumbs).find(img => img.src.includes(src.split('/').pop()));
+            if(activeThumb) {
+                activeThumb.classList.add('border-primary', 'active');
+            }
+        }
+    </script>
+
+<nav class="mobile-bottom-nav">
+    <a href="index.html" >
+        <span class="nav-icon"><i class="fa-solid fa-house"></i></span>
+        <span>Home</span>
+    </a>
+    <a href="about.html">
+        <span class="nav-icon"><i class="fa-solid fa-user"></i></span>
+        <span>About</span>
+    </a>
+    <a href="store.html" class="active">
+        <span class="nav-icon"><i class="fa-solid fa-store"></i></span>
+        <span>Shop</span>
+    </a>
+    <a href="store.html" class="nav-fab" title="Shop Now">
+        <i class="fa-solid fa-bag-shopping"></i>
+    </a>
+    <a href="blog.html">
+        <span class="nav-icon"><i class="fa-solid fa-book-open"></i></span>
+        <span>Blog</span>
+    </a>
+    <a href="contact.html">
+        <span class="nav-icon"><i class="fa-solid fa-envelope"></i></span>
+        <span>Contact</span>
+    </a>
+</nav>
+<!-- WhatsApp Chat Floating Button -->
+<a href="https://wa.me/918921130682" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="wa-label">Chat with us<br><small>+91 89211 30682</small></span>
+</a>
+   <!-- Footer Start -->
+   <footer class="main-footer dark-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Main Footer Start -->
+                <div class="main-footer-box">
+                    <!-- Footer About Start -->
+                    <div class="footer-about">
+                        <!-- Footer Logo Start -->
+                        <div class="">
+                            <a class="navbar-brand" href="index.html">
+                                <img class="logo_image" src="images/logo.png" alt="SpiceHuse Logo" style="padding-bottom: 30px;"> 
+                            </a>
+                        </div>
+                        <!-- Footer Logo End -->
+                        
+                        <!-- About Footer Content Start -->
+                        <div class="about-footer-content">
+                            <p>At SpiceHuse, we bring you handpicked spices from farms to your kitchen — bold flavors, authentic aromas, and a touch of tradition in every blend.</p>
+                        </div>
+                        <!-- About Footer Content End -->
+
+                    </div>
+                    <!-- Footer About End -->
+
+                    <!-- Footer Links List Start -->
+                    <div class="footer-links-box">
+                        <!-- Footer Links Start -->
+                        <div class="footer-links">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="products.html">Our Spices</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <!-- Footer Links End -->
+                        
+                        <!-- Footer Links Start -->
+                        <div class="footer-links">
+                            <h3>Our Services</h3>
+                            <ul>
+                                <li><a href="#">Bulk Orders</a></li>
+                                <li><a href="#">Custom Spice Blends</a></li>
+                                <li><a href="#">Export & Wholesale</a></li>
+                                <li><a href="#">Recipes & Cooking Guides</a></li>
+                            </ul>
+                        </div>
+                        <!-- Footer Links End -->
+
+                        <!-- Footer Newsletter Form Start -->
+                        <div class="footer-links footer-newsletter-form">
+                            <h3>Contact Us</h3>
+                            <ul>
+                                <li>
+                                    <a href="tel:+918921130682">+91 89211 30682</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:spicehuse@gmail.com">spicehuse@gmail.com</a>
+                                </li>
+                                <li>
+                                   <p>Idukki, Kerala, India</p> 
+                                </li>
+                            </ul>
+                            <!-- Footer Contact Item End -->
+                        </div>
+                        <!-- Footer Newsletter Form End -->
+                    </div>
+                    <!-- Footer Links List End -->
+                </div>
+                <!-- Main Footer End -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Copyright Start -->
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <!-- Footer Copyright Text Start -->
+                    <div class="footer-copyright-text">
+                        <p>Copyright © 2025 SpiceHuse. All Rights Reserved.</p>
+                    </div>
+                    <!-- Footer Copyright Text End -->
+                </div>
+                
+                <div class="col-md-5">
+                    <!-- Footer Social Links Start -->
+                    <div class="footer-social-links">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- Footer Social Links End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Copyright End -->
+</footer>
+
+<!-- Footer End -->
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Isotop js file -->
+	<script src="js/isotope.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- YTPlayer js File -->
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.min.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+</body>
+</html>
